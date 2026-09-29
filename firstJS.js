@@ -57,16 +57,44 @@ or in short form
 // let age = prompt('age?', 25)
 // if (!((age >= 14) && (age <=90))) {alert('You are not between 14 and 90')}
 
-let userName = prompt("Who's there?")
-if (userName===null) {
-    alert('Cancelled!')
-    } else if (userName === "" || userName !== "Admin") {
-        alert("I don't know you!")
-    } else if (userName === "Admin"){
-        let password = prompt('Password?')
-        if (password === null) {
-            alert ('Cancelled')
-        } else if (password ==="Password") {
-            alert('Login Successful!')
-        } else {alert('Wrong Password')}
-    } 
+// let userName = prompt("Who's there?")
+// if (userName===null) {
+//     alert('Cancelled!')
+//     } else if (userName === "" || userName !== "Admin") {
+//         alert("I don't know you!")
+//     } else if (userName === "Admin"){
+//         let password = prompt('Password?')
+//         if (password === null) {
+//             alert ('Cancelled')
+//         } else if (password ==="Password") {
+//             alert('Login Successful!')
+//         } else {alert('Wrong Password')}
+//     } 
+
+/* Nullish coallescing operator ??
+It’s used to assign default values to variables: height = height ?? 100;
+it returns the first argument if it's not null/undefined, otherwise the second one and so on
+result = a ?? b
+result = (a !== null && a !== undefined) ? a : b;
+difference between || and && is
+|| returns the first truthy value.
+?? returns the first defined value.
+example
+let height = 0;
+
+alert(height || 100); // 100
+alert(height ?? 100); // 0
+
+*/ 
+
+/* loops
+- while (condition) {loop body};
+- do {loop body} while (condition);
+- for (begin;condition; step) {loop body}
+*/
+let colors = ['red', 'blue']
+let i = 10;
+while (i>0) {
+    document.getElementsByTagName('h1')[0].style.color = 'blue';
+    i--;
+}
