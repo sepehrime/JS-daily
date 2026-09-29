@@ -45,7 +45,28 @@ or in short form
 //  let oddOrEven = (x % 2)? "It's an odd number" : "It's an even number."
 //  alert(oddOrEven)
 
-let message = (login == 'Employee')? 'Hello' : 
-(login == 'Director') ? 'Greeting' :
-(login = '') ? 'No login': 
-'';
+// let message = (login == 'Employee')? 'Hello' : 
+// (login == 'Director') ? 'Greeting' :
+// (login = '') ? 'No login': 
+// '';
+/// logical Operators
+// result = a || b; // short circut, looks for the first true (and exit) or the result is false
+// if (hour == 12 && minute = 30) {alert('time is 12:30')} 
+// result = !value // returns true or false
+
+// let age = prompt('age?', 25)
+// if (!((age >= 14) && (age <=90))) {alert('You are not between 14 and 90')}
+
+let userName = prompt("Who's there?")
+if (userName===null) {
+    alert('Cancelled!')
+    } else if (userName === "" || userName !== "Admin") {
+        alert("I don't know you!")
+    } else if (userName === "Admin"){
+        let password = prompt('Password?')
+        if (password === null) {
+            alert ('Cancelled')
+        } else if (password ==="Password") {
+            alert('Login Successful!')
+        } else {alert('Wrong Password')}
+    } 
