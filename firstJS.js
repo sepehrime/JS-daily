@@ -23,14 +23,29 @@
 
 /// Comparison (> < >= <=  != == ===) which outputs true or false
 /// all of the following results in true
-2 > 1
-2 != 1 
-'Z' > 'A'
-'Glow' > 'Glee'
-'a' > 'A'
-'2' > 1 //numeric conversion happens first
-true == 1
-0 == false // again numberic conversion happens first
+// 2 > 1
+// 2 != 1 
+// 'Z' > 'A'
+// 'Glow' > 'Glee'
+// 'a' > 'A'
+// '2' > 1 //numeric conversion happens first
+// true == 1
+// 0 == false // again numberic conversion happens first
 /// to compare without conversion we use strict equality 0 === false results in false
 /// there is also strict non-equality !===
 
+/* Conditional statement if
+    if (condition) 
+        {code block}
+    else {code block} 
+    
+or in short form
+ let result = condition ? Value 1 : Value 2    */
+//  let x = prompt('number?', 2);
+//  let oddOrEven = (x % 2)? "It's an odd number" : "It's an even number."
+//  alert(oddOrEven)
+
+let message = (login == 'Employee')? 'Hello' : 
+(login == 'Director') ? 'Greeting' :
+(login = '') ? 'No login': 
+'';
