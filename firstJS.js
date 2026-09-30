@@ -22,7 +22,7 @@
 // Boolean("") // false
 
 /// Comparison (> < >= <=  != == ===) which outputs true or false
-/// all of the following results in true
+/// all of the following results are true
 // 2 > 1
 // 2 != 1 
 // 'Z' > 'A'
@@ -31,7 +31,7 @@
 // '2' > 1 //numeric conversion happens first
 // true == 1
 // 0 == false // again numberic conversion happens first
-/// to compare without conversion we use strict equality 0 === false results in false
+/// to compare without conversion we use strict equality; 0 === false results in false
 /// there is also strict non-equality !===
 
 /* Conditional statement if
@@ -52,7 +52,7 @@ or in short form
 /// logical Operators
 // result = a || b; // short circut, looks for the first true (and exit) or the result is false
 // if (hour == 12 && minute = 30) {alert('time is 12:30')} 
-// result = !value // returns true or false
+// let result = !value // returns true or false
 
 // let age = prompt('age?', 25)
 // if (!((age >= 14) && (age <=90))) {alert('You are not between 14 and 90')}
@@ -95,7 +95,7 @@ alert(height ?? 100); // 0
 ///example
 // let sum = 0;
 // while(true){
-//     let value = +prompt('value?');
+//     let value = +prompt('value?'); // + here converts the input to a number
 //     if (!value) break;
 //     if (value % 2 == 0) continue;
 //     sum += value;
@@ -120,3 +120,20 @@ alert(height ?? 100); // 0
 
 //   alert( i ); // a prime
 // }
+/// switch
+// let a = 15;
+// let guess = +prompt('I am thinking of a number. Can you guess it?')
+// switch (guess) {
+//     case 15 :
+//         alert('That is correct!');
+//         break;
+//     case 12 :
+//         alert('your guess was too small');
+//         break;
+//     case 20 : 
+//     case 25 : // you can group multiple cases
+//         alert('Your guess was too high!');
+//         break;
+//     default :
+//         alert('Sorry')
+// }   
