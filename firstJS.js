@@ -24,7 +24,7 @@
 /// Comparison (> < >= <=  != == ===) which outputs true or false
 /// all of the following results are true
 // 2 > 1
-// 2 != 1 
+// 2 != 1
 // 'Z' > 'A'
 // 'Glow' > 'Glee'
 // 'a' > 'A'
@@ -45,13 +45,13 @@ or in short form
 //  let oddOrEven = (x % 2)? "It's an odd number" : "It's an even number."
 //  alert(oddOrEven)
 
-// let message = (login == 'Employee')? 'Hello' : 
+// let message = (login == 'Employee')? 'Hello' :
 // (login == 'Director') ? 'Greeting' :
-// (login = '') ? 'No login': 
+// (login = '') ? 'No login':
 // '';
 /// logical Operators
 // result = a || b; // short circut, looks for the first true (and exit) or the result is false
-// if (hour == 12 && minute = 30) {alert('time is 12:30')} 
+// if (hour == 12 && minute = 30) {alert('time is 12:30')}
 // let result = !value // returns true or false
 
 // let age = prompt('age?', 25)
@@ -69,7 +69,7 @@ or in short form
 //         } else if (password ==="Password") {
 //             alert('Login Successful!')
 //         } else {alert('Wrong Password')}
-//     } 
+//     }
 
 /* Nullish coallescing operator ??
 It’s used to assign default values to variables: height = height ?? 100;
@@ -85,7 +85,7 @@ let height = 0;
 alert(height || 100); // 100
 alert(height ?? 100); // 0
 
-*/ 
+*/
 
 /* loops
 - while (condition) {loop body};
@@ -130,10 +130,88 @@ alert(height ?? 100); // 0
 //     case 12 :
 //         alert('your guess was too small');
 //         break;
-//     case 20 : 
+//     case 20 :
 //     case 25 : // you can group multiple cases
 //         alert('Your guess was too high!');
 //         break;
 //     default :
 //         alert('Sorry')
-// }   
+// }
+
+/// functions
+// function showMessage(from='user', text='default text'){
+//     from = '*' + from + '*';
+//     alert(from + ': '+ text);
+// };
+// showMessage('Ann', 'Hello!')
+// const heading2 = document.getElementById("myH2")
+// heading2.innerText = "Hi"
+
+/// functions with output
+// function checkAge(age){
+//     if (age >= 18) return true;
+//     else return false;
+// }
+// function checkAgeShort(age){
+//     reutrn (age>18) ? true : confirm('Did parents allow you?');
+//     // return (age>18) || confirm('Did parents ...');
+// }
+
+// function showMin(a,b) {
+//     debugger;
+//     return (a>b) ? a:b;
+// }
+// alert(showMin(2,2))
+/* you can return without a value (returns undefined)
+- name the function as a verb, it should be descriptive 
+showResults, getData, calcSum, createForm, checkPermission, etc
+- function should be short and do only one thing
+*/
+/// function expression
+// let calcSum = function(a,b) {
+//  return a+b;
+//  };
+
+/// arrow functions can be define with multiple, one or no arguments. it can be one line or multiple
+/// let calcSum = (a,b) => a+b;
+/// let double = a => a * 2 ;
+/// let sayHi = () => alert('Hi')
+/// let sum = (a,b) => {
+///     let result  = a+b;
+///    return results;
+///   };
+
+//// objects
+// objectName.propertyName;
+// objectName["propertyName"];
+// person.name = "John";
+// delete person.age;
+// // in
+// let result = "firstName" in person;
+// //this
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// person.fullName(); //>>> 'John Doe'
+// person.fullName; // >>> ƒ () {return this.firstName + " " + this.lastName;}
+// Object.values(person); // array of values  ['John', 'Doe', 50, ƒ]
+// Object.keys(person); //array of keys ['firstName', 'lastName', 'age', 'fullName']
+// Object.entries(person); // array of array of key, vlues [[key0,value0], [key1, value1]]
+// JSON.stringify(perosn); // '{"firstName":"John","lastName":"Doe","age":50}'
+
+// /// object construct, define objects
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+//   this.nationality = "English"; /// default value, but can be changed
+// }
+// /// create new objects from the construct
+// const mySelf = new Person("Johnny", "Rally", 22, "green");
+// mySelf.nationality = "American";
