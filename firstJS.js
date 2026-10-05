@@ -5,8 +5,8 @@
 // //confirm
 // let isBoss = confirm('Are you admin?');
 // if (isBoss) {
-//     alert('Hello Admin!')}
-//     else {alert('Please log in as Admin!')}
+//     alert('Hello Admin!')
+//     } else {alert('Please log in as Admin!')}
 
 ///Conversion
 // let value = true, x = '6'
@@ -215,3 +215,9 @@ showResults, getData, calcSum, createForm, checkPermission, etc
 // /// create new objects from the construct
 // const mySelf = new Person("Johnny", "Rally", 22, "green");
 // mySelf.nationality = "American";
+
+// Date
+localTime = new Date();
+let hours  = localTime.getHours();
+let minute = localTime.getMinutes();
+minute = minute.toString().padStart(2,"0") // adds zero when the minutes are 0-9 >> 00-09
