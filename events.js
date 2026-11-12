@@ -9,6 +9,9 @@ let x, y;
 y = 10;
 x = y = 25;
 
+let number = 5;
+console.log(`${number} is ${x % 2 ? "odd" : "even"} `);
+
 const submitBtn = document.querySelector("#submit-button");
 submitBtn.addEventListener("click", function () {
   confirm("clicked!");

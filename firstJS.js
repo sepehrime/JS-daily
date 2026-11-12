@@ -39,11 +39,12 @@
         {code block}
     else {code block} 
     
-or in short form
+or in short form (ternary)
  let result = condition ? Value 1 : Value 2    */
 //  let x = prompt('number?', 2);
 //  let oddOrEven = (x % 2)? "It's an odd number" : "It's an even number."
 //  alert(oddOrEven)
+// console.log(`${number} is ${(x%2)? 'odd' : 'even'} )
 
 // let message = (login == 'Employee')? 'Hello' :
 // (login == 'Director') ? 'Greeting' :
