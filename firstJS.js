@@ -91,6 +91,9 @@ alert(height ?? 100); // 0
 - while (condition) {loop body};
 - do {loop body} while (condition);
 - for (begin;condition; step) {loop body}
+- for (value of array) {loop through array elements}
+- for (index in arry) {loop thru array indices}
+- array.forEach(function(value[, index]) {do something on array values [and or index]});
 */
 ///example
 // let sum = 0;
@@ -174,7 +177,7 @@ showResults, getData, calcSum, createForm, checkPermission, etc
 
 /// arrow functions can be define with multiple, one or no arguments. it can be one line or multiple
 /// let calcSum = (a,b) => a+b;
-/// let double = a => a * 2 ;
+/// let double = a => a * 2 ; this is eq let double = function(a) {return a * 2;} since there is only one arg and one statement () and return can be omitted
 /// let sayHi = () => alert('Hi')
 /// let sum = (a,b) => {
 ///     let result  = a+b;
@@ -217,7 +220,7 @@ showResults, getData, calcSum, createForm, checkPermission, etc
 // mySelf.nationality = "American";
 
 // Date
-localTime = new Date();
-let hours  = localTime.getHours();
-let minute = localTime.getMinutes();
-minute = minute.toString().padStart(2,"0") // adds zero when the minutes are 0-9 >> 00-09
+// localTime = new Date();
+// let hours  = localTime.getHours();
+// let minute = localTime.getMinutes();
+// minute = minute.toString().padStart(2,"0") // adds zero when the minutes are 0-9 >> 00-09
